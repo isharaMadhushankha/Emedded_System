@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "author": "Ishara Madushanka",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 39, "left": -0.6, "attrs": {} },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -112.8,
+      "left": 145.8,
+      "attrs": { "volume": "0.1" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -109.2,
+      "left": -5.8,
+      "attrs": { "color": "red" }
+    }
+  ],
+  "connections": [
+    [ "bz1:1", "uno:GND.1", "green", [ "v9.6", "h-9.6" ] ],
+    [ "bz1:2", "uno:13", "green", [ "v9.6", "h-10" ] ],
+    [ "led1:C", "uno:GND.1", "green", [ "v9.6", "h154" ] ],
+    [ "led1:A", "uno:12", "green", [ "v0", "h153.6" ] ]
+  ],
+  "dependencies": {}
+}
