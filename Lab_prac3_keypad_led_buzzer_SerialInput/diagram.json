@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "author": "Ishara Madushanka",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 211.8, "left": -298.2, "attrs": {} },
+    { "type": "wokwi-membrane-keypad", "id": "keypad1", "top": -328.4, "left": -4, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 15.6,
+      "left": -399.4,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -103.2,
+      "left": -219,
+      "attrs": { "volume": "0.1" }
+    }
+  ],
+  "connections": [
+    [ "keypad1:R1", "uno:9", "green", [ "v38.4", "h86.4" ] ],
+    [ "keypad1:R3", "uno:7", "green", [ "v19.2", "h95.7" ] ],
+    [ "keypad1:R4", "uno:6", "green", [ "v9.6", "h95.8" ] ],
+    [ "keypad1:R2", "uno:8", "green", [ "v28.8", "h-230.8" ] ],
+    [ "keypad1:C1", "uno:5", "green", [ "v48", "h-220.9" ] ],
+    [ "keypad1:C2", "uno:4", "green", [ "v57.6", "h-230.4" ] ],
+    [ "keypad1:C3", "uno:3", "green", [ "v67.2", "h-220.95" ] ],
+    [ "keypad1:C4", "uno:2", "green", [ "v76.8", "h-230.7" ] ],
+    [ "led1:C", "uno:GND.1", "green", [ "v48", "h192.4" ] ],
+    [ "led1:A", "uno:13", "green", [ "v38.4", "h201.6" ] ],
+    [ "bz1:1", "uno:GND.1", "green", [ "v0" ] ],
+    [ "bz1:2", "uno:12", "green", [ "v86.4", "h28.4" ] ]
+  ],
+  "dependencies": {}
+}

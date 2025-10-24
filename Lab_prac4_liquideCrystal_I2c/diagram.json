@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "author": "Ishara Madushanka",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -37.8, "left": -67.8, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -214.4,
+      "left": 159.2,
+      "attrs": { "pins": "i2c" }
+    }
+  ],
+  "connections": [
+    [ "lcd1:GND", "uno:GND.1", "black", [ "h0" ] ],
+    [ "lcd1:VCC", "uno:5V", "red", [ "h-268.8", "v374.5", "h201.6" ] ],
+    [ "lcd1:SDA", "uno:A4", "green", [ "h-278.4", "v355.4", "h288" ] ],
+    [ "lcd1:SCL", "uno:A5", "green", [ "h-297.6", "v336.3", "h326.4" ] ]
+  ],
+  "dependencies": {}
+}
