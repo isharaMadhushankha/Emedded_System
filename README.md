@@ -14,3 +14,11 @@
 <br>
 <h3>Create small system combined I2C,Kepad,LED,Buzzer and Serial Output</h3> 
 <img width="1366" height="768" alt="Screenshot (650)" src="https://github.com/user-attachments/assets/9bd85a53-079c-4e44-bf8d-d53ca4dd13f9" />
+<br>
+<h3>LDR Sensor </h3> 
+<img width="1366" height="768" alt="Screenshot (651)" src="https://github.com/user-attachments/assets/75b7a1f0-d3e8-48c2-bead-02fc86bbdb79" />
+<br>
+<h3>Combine LDR,LED,I2CD,Buzzer,Serial</h3> 
+<img width="1366" height="768" alt="Screenshot (653)" src="https://github.com/user-attachments/assets/661faeb8-a3d0-44eb-97c9-fb552ff21dad" />
+
+
