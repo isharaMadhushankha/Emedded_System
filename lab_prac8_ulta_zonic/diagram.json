@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "author": "Ishara Madushanka",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 67.8, "left": 37.8, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic1", "top": -104.1, "left": 53.5, "attrs": {} }
+  ],
+  "connections": [
+    [ "ultrasonic1:VCC", "uno:5V", "red", [ "v48", "h-115.2", "v249.6", "h192" ] ],
+    [ "ultrasonic1:GND", "uno:GND.1", "black", [ "v0" ] ],
+    [ "ultrasonic1:TRIG", "uno:13", "green", [ "v38.4", "h28.4", "v57.6" ] ],
+    [ "ultrasonic1:ECHO", "uno:12", "green", [ "v28.8", "h28" ] ]
+  ],
+  "dependencies": {}
+}
