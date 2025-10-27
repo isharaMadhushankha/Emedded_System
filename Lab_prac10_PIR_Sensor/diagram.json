@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "author": "Ishara Madushanka",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 67.8, "left": -67.8, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -51.6,
+      "left": -53.8,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -118.4,
+      "left": 120.8,
+      "attrs": { "pins": "i2c" }
+    },
+    { "type": "wokwi-pir-motion-sensor", "id": "pir1", "top": 61.6, "left": 251.82, "attrs": {} }
+  ],
+  "connections": [
+    [ "lcd1:GND", "uno:GND.1", "black", [ "h0" ] ],
+    [ "lcd1:VCC", "uno:5V", "red", [ "h-201.6", "v374.5", "h172.8" ] ],
+    [ "lcd1:SDA", "uno:A4", "green", [ "h-57.6", "v115.4", "h163.2", "v249.6", "h-48" ] ],
+    [ "lcd1:SCL", "uno:A5", "green", [ "h-48", "v115.5", "h163.2", "v249.6", "h-48" ] ],
+    [ "led1:C", "uno:GND.1", "green", [ "v48", "h48.4" ] ],
+    [ "led1:A", "uno:13", "green", [ "v19.2", "h86.4" ] ],
+    [ "pir1:VCC", "uno:5V", "red", [ "v153.6", "h-192" ] ],
+    [ "pir1:OUT", "uno:2", "green", [ "v28.8", "h-86.54", "v-144", "h-38.4" ] ],
+    [ "pir1:GND", "uno:GND.2", "black", [ "v124.8", "h-201.86" ] ]
+  ],
+  "dependencies": {}
+}
