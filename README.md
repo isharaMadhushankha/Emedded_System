@@ -26,5 +26,6 @@
 <br>
 <h3>DHT22 & OLED</h3> 
 <img width="1366" height="768" alt="Screenshot (655)" src="https://github.com/user-attachments/assets/6e85f71d-4e5c-4825-bcb6-a88e56c8b0d8" />
-
-
+<br>
+<h3>PIR Sensor</h3> 
+<img width="1366" height="768" alt="Screenshot (657)" src="https://github.com/user-attachments/assets/20db86c2-4b8f-45b7-b16a-38996892cd7b" />
